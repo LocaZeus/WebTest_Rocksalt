@@ -1,0 +1,106 @@
+<section class="ph" aria-labelledby="page-title">
+  <div class="wrap ph__grid">
+    <div class="ph__copy">
+      <p class="m-text-6 m-eyebrow">Private dining &amp; functions · Brighton</p>
+      <h1 class="m-text-3 ph__title" id="page-title">Bring <em>your people.</em></h1>
+      <p class="m-text-5 ph__lead">A birthday. A work catch-up. A reason to celebrate. Make it an occasion at Rocksalt.</p>
+      <div class="ph__actions">
+        <a class="m-btn" href="#enquiry"><span class="m-btn__label">Send an enquiry</span></a>
+        <a class="m-link" href="{{PHONE_HREF}}">Or call {{PHONE}}</a>
+      </div>
+    </div>
+    <div class="ph__photo">
+      <div class="ph__arch"><img style="background:#8a6a4e;object-position: 40% 50%" src="/media/dining-room-day-1024.webp" alt="Guests at tables in the Rocksalt dining room during the day" width="1024" height="683" fetchpriority="high"></div>
+      <span class="m-badge ph__sticker">No minimum spend</span>
+    </div>
+  </div>
+</section>
+<!--include:parties-->
+<section class="band bg-blush cd" aria-labelledby="facts-title">
+  <svg class="m-wave" data-8b-motion="twang" viewBox="0 0 1000 100" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="{{WAVE}}"/></svg>
+  <div class="wrap">
+    <div class="cd__head">
+      <h2 class="m-text-3 cd__title" id="facts-title" data-8b-motion="hop">The <em>details.</em></h2>
+    </div>
+    <ul class="cd__grid">
+      <li class="m-surface cd__card" data-8b-motion="sticker"><p class="cd__stat">50 to 60</p><h3 class="m-text-4">Seated indoors</h3><p class="m-text">Room for a long lunch, a birthday dinner or a work gathering.</p></li>
+      <li class="m-surface cd__card" data-8b-motion="sticker"><p class="cd__stat">70</p><h3 class="m-text-4">Cocktail &amp; canapé</h3><p class="m-text">For standing events with drinks and canapés.</p></li>
+      <li class="m-surface cd__card" data-8b-motion="sticker"><p class="cd__stat">$0</p><h3 class="m-text-4">Minimum spend</h3><p class="m-text">There's no minimum spend. Tell us what you have in mind.</p></li>
+    </ul>
+  </div>
+</section>
+<section id="enquiry" class="band ct bg-red" aria-labelledby="enquiry-title">
+  <svg class="m-wave" data-8b-motion="twang" viewBox="0 0 1000 100" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="{{WAVE}}"/></svg>
+  <div class="wrap ct__grid">
+    <div class="ct__info">
+      <h2 class="m-text-3 ct__title" id="enquiry-title" data-8b-motion="hop">Tell us what <em>you're planning.</em></h2>
+      <ol class="m-text-5 ct__way">
+        <li>1. Tell us the occasion, the date (if you know it) and roughly how many guests.</li>
+        <li>2. Talk through the options with our team.</li>
+        <li>3. Confirm the arrangements directly with the venue.</li>
+      </ol>
+      <p class="m-text">Prefer to talk? Call us on <a class="m-link" href="{{PHONE_HREF}}">{{PHONE}}</a>.</p>
+      <p class="m-text">Sending an enquiry doesn't confirm a booking.</p>
+    </div>
+    <form class="m-surface ct__form" action="#" method="post" novalidate>
+      <h3 class="m-text-4">Function enquiry</h3>
+      <div class="ct__fields">
+        <label class="ct__field"><span class="m-text-6">Full name</span><input class="m-field" name="name" autocomplete="name" required></label>
+        <label class="ct__field"><span class="m-text-6">Email address</span><input class="m-field" type="email" name="email" autocomplete="email" required></label>
+        <label class="ct__field"><span class="m-text-6">Phone (optional)</span><input class="m-field" type="tel" name="phone" autocomplete="tel"></label>
+        <label class="ct__field"><span class="m-text-6">Occasion</span>
+          <select class="m-field" name="occasion" required>
+            <option value="">Choose one</option>
+            <option>Birthday</option>
+            <option>Engagement or milestone</option>
+            <option>Work gathering</option>
+            <option>Christmas gathering</option>
+            <option>Something else</option>
+          </select>
+        </label>
+        <label class="ct__field"><span class="m-text-6">Preferred date</span><input class="m-field" type="date" name="date" data-date required></label>
+        <label class="ct__field ct__check"><input type="checkbox" name="date-unsure" data-notsure><span class="m-text">Not sure yet</span></label>
+        <label class="ct__field"><span class="m-text-6">Approximate guests</span><input class="m-field" type="number" name="guests" min="1" max="200" inputmode="numeric" required></label>
+        <label class="ct__field"><span class="m-text-6">Time of day (optional)</span>
+          <select class="m-field" name="time">
+            <option value="">No preference</option>
+            <option>Morning</option>
+            <option>Lunch</option>
+            <option>Afternoon</option>
+            <option>Dinner</option>
+          </select>
+        </label>
+        <label class="ct__field"><span class="m-text-6">Date flexibility (optional)</span>
+          <select class="m-field" name="flexibility">
+            <option value="">Not specified</option>
+            <option>This date only</option>
+            <option>A few days either side</option>
+            <option>Very flexible</option>
+          </select>
+        </label>
+        <label class="ct__field ct__field--wide"><span class="m-text-6">Anything else about your plans (optional)</span><textarea class="m-field" name="details" rows="4"></textarea></label>
+      </div>
+      <p class="m-text ct__privacy">We only use your details to reply to your enquiry. Please don't include payment details or other sensitive information.</p>
+      <button class="m-btn ct__send" type="submit"><span class="m-btn__label">Send enquiry</span></button>
+      <p class="m-text-6 ct__status" role="status" aria-live="polite" data-error="Please fill in your name, a valid email, the occasion, a date (or tick Not sure yet) and the number of guests." data-sent="Thanks. This preview doesn't send enquiries yet, so please call or email us for now."></p>
+    </form>
+  </div>
+</section>
+<section id="faq" class="band bg-blush" data-8b-section="faq" aria-labelledby="faq-title">
+  <svg class="m-wave" data-8b-motion="twang" viewBox="0 0 1000 100" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="{{WAVE}}"/></svg>
+  <div class="wrap fq__grid">
+    <div class="fq__head">
+      <h2 class="m-text-3 fq__title" id="faq-title">Good <em>questions.</em></h2>
+      <p class="m-text">Something else? Call us on <a class="m-link" href="{{PHONE_HREF}}">{{PHONE}}</a>.</p>
+    </div>
+    <div class="fq__list">
+      <span class="fq__mark" aria-hidden="true">?</span>
+      <details class="fq__item"><summary class="fq__q"><span class="m-text-5">How many people can you host?</span><span class="fq__icon" aria-hidden="true"></span></summary><p class="m-text fq__a">Rocksalt seats 50 to 60 indoors, or 70 for cocktail and canapé events.</p></details>
+      <details class="fq__item"><summary class="fq__q"><span class="m-text-5">Is there a minimum spend?</span><span class="fq__icon" aria-hidden="true"></span></summary><p class="m-text fq__a">No. There's no minimum spend for private dining and functions.</p></details>
+      <details class="fq__item"><summary class="fq__q"><span class="m-text-5">Does sending an enquiry confirm my booking?</span><span class="fq__icon" aria-hidden="true"></span></summary><p class="m-text fq__a">No. An enquiry starts the conversation. We'll talk through the options with you, and you confirm the arrangements directly with the venue.</p></details>
+      <details class="fq__item"><summary class="fq__q"><span class="m-text-5">What if I don't have a date yet?</span><span class="fq__icon" aria-hidden="true"></span></summary><p class="m-text fq__a">That's fine. Tick "Not sure yet" on the form and tell us roughly when you're thinking.</p></details>
+      <details class="fq__item"><summary class="fq__q"><span class="m-text-5">Can you cater for allergies?</span><span class="fq__icon" aria-hidden="true"></span></summary><p class="m-text fq__a">Please tell our team in advance. Our kitchen handles nuts, gluten and other allergens, and cross-contact may occur.</p></details>
+      <details class="fq__item"><summary class="fq__q"><span class="m-text-5">Is it just for a table of friends?</span><span class="fq__icon" aria-hidden="true"></span></summary><p class="m-text fq__a">If you only need a table, use Book a table for a regular reservation. Functions have their own enquiry form above.</p></details>
+    </div>
+  </div>
+</section>

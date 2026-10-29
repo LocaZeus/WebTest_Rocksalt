@@ -1,0 +1,27 @@
+{
+  "name": "Rocksalt Cafe & Restaurant",
+  "address": "360-364 Bay Street, Brighton VIC 3186",
+  "phoneDisplay": "03 9596 4622",
+  "phoneHref": "tel:+61395964622",
+  "email": "info@rocksalt.net.au",
+  "operator": "Unique Flavours Pty Ltd",
+  "links": {
+    "OT": "https://www.opentable.com.au/r/rocksalt-reservations-brighton?restref=118028&lang=en-AU&ot_source=Restaurant%20website",
+    "PDF_FOOD": "https://www.rocksalt.net.au/_files/ugd/c6d223_0b3f7e2f68f841d7b9f60c980d7375a1.pdf",
+    "PDF_DRINKS": "https://www.rocksalt.net.au/_files/ugd/c6d223_24ff5e9824df447f8fdaabdb38f7672c.pdf",
+    "IG": "https://www.instagram.com/rocksaltbrighton/",
+    "FB": "https://www.facebook.com/profile.php?id=100035141332242",
+    "MAPS": "https://www.google.com/maps/dir/?api=1&destination=360-364%20Bay%20St%2C%20Brighton%20VIC%203186"
+  },
+  "nav": [
+    { "label": "Home", "path": "/", "key": "home" },
+    { "label": "Menus", "path": "/menus/", "key": "menus" },
+    { "label": "Live music", "path": "/live-music/", "key": "live-music" },
+    { "label": "Private dining & functions", "path": "/private-dining-functions/", "key": "functions" },
+    { "label": "About", "path": "/about/", "key": "about" },
+    { "label": "What's on", "path": "/events/", "key": "events" },
+    { "label": "Gallery", "path": "/gallery/", "key": "gallery" },
+    { "label": "Journal", "path": "/blog/", "key": "blog" },
+    { "label": "Contact", "path": "/contact/", "key": "contact" }
+  ]
+}

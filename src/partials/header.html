@@ -1,0 +1,25 @@
+<!-- navigation: fixed top bar: Rocksalt seal, Menus link, Book a table button, Menu button opening a full-screen overlay with every page and the contacts -->
+<header id="nav" data-8b-section="navigation">
+  <a class="nav__logo" href="/" aria-label="Rocksalt, home"><img src="/media/logo/rocksalt-seal.svg" alt="" width="64" height="64"></a>
+  <div class="nav__right">
+    <a class="m-link nav__quick" href="/menus/">Our menus</a>
+    <a class="m-btn m-btn--out nav__book" href="{{OT}}" target="_blank" rel="noopener"><span class="m-btn__label">Book a table</span></a>
+    <button class="m-btn-2 nav__menu" type="button" aria-expanded="false" aria-controls="menu"><span class="m-btn-2__label">Menu</span><span class="nav__lines" aria-hidden="true"></span></button>
+  </div>
+  <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+    <div class="menu__top">
+      <img class="nav__logo" src="/media/logo/rocksalt-seal.svg" alt="" width="64" height="64">
+      <button class="m-icon-btn menu__close" type="button" aria-label="Close menu"><span class="m-icon-btn__icon" aria-hidden="true"></span></button>
+    </div>
+    <nav aria-label="Pages">
+      <ul class="menu__list">{{NAVLIST}}</ul>
+    </nav>
+    <div class="menu__foot">
+      <a class="m-link" href="{{PHONE_HREF}}">{{PHONE}}</a>
+      <a class="m-link" href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+      <a class="m-link" href="{{IG}}" target="_blank" rel="noopener">Instagram</a>
+      <a class="m-link" href="{{FB}}" target="_blank" rel="noopener">Facebook</a>
+      <span class="m-text-6">{{ADDRESS}} · Every day 7:30am to 8:30pm</span>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,62 @@
+[
+  {
+    "path": "/", "file": "home", "nav": "home",
+    "title": "Rocksalt | Cafe & Restaurant, Bay Street Brighton",
+    "description": "All-day cafe and restaurant on Bay Street, Brighton. Breakfast from 7:30am, lunch, dinner and live music every Sunday from 4pm. Walk in or book a table.",
+    "scenes": ["opening", "zones", "airtime", "sessions", "prices", "footer"]
+  },
+  {
+    "path": "/menus/", "file": "menus", "nav": "menus",
+    "title": "Menus | Rocksalt Brighton",
+    "description": "Breakfast, lunch and dinner seven days at Rocksalt, Bay Street Brighton. Search the full food and drinks menu, with vegetarian and gluten free labels.",
+    "scenes": ["footer"], "js": ["menu"]
+  },
+  {
+    "path": "/live-music/", "file": "live-music", "nav": "live-music",
+    "title": "Live Music Brighton, Every Sunday | Rocksalt",
+    "description": "Live music every Sunday from 4pm at Rocksalt, Bay Street Brighton, with the Bornstein Ultimatum and guest vocalists. Walk in, no cover. Stay for dinner.",
+    "scenes": ["league", "footer"]
+  },
+  {
+    "path": "/private-dining-functions/", "file": "functions", "nav": "functions",
+    "title": "Private Dining & Functions Brighton | Rocksalt",
+    "description": "Birthdays, engagements, work gatherings and Christmas at Rocksalt, Bay Street Brighton. Seats 50 to 60 indoors, 70 for cocktail events, no minimum spend.",
+    "scenes": ["parties", "faq", "footer"]
+  },
+  {
+    "path": "/about/", "file": "about", "nav": "about",
+    "title": "About | Rocksalt Cafe & Restaurant Brighton",
+    "description": "Rocksalt is an independent all-day cafe and restaurant on Bay Street, Brighton. Meet the team and the suppliers behind the coffee, seafood and Sunday sessions.",
+    "scenes": ["footer"]
+  },
+  {
+    "path": "/events/", "file": "events", "nav": "events",
+    "title": "What's On | Rocksalt Brighton",
+    "description": "Live music every Sunday from 4pm, plus seasonal evenings and guest events through the year at Rocksalt, 360-364 Bay Street, Brighton.",
+    "scenes": ["footer"]
+  },
+  {
+    "path": "/contact/", "file": "contact", "nav": "contact",
+    "title": "Contact | Rocksalt Cafe & Restaurant Brighton",
+    "description": "Find Rocksalt at 360-364 Bay Street, Brighton. Opening hours, phone, email and directions, or send us a message.",
+    "scenes": ["faq", "footer"]
+  },
+  {
+    "path": "/gallery/", "file": "gallery", "nav": "gallery",
+    "title": "Gallery | Rocksalt Cafe & Restaurant Brighton",
+    "description": "Photos of the food, coffee, dining room and Sunday sessions at Rocksalt, Bay Street Brighton.",
+    "scenes": ["footer"], "js": ["gallery"]
+  },
+  {
+    "path": "/blog/", "file": "blog", "nav": "blog", "noindex": true,
+    "title": "The Rocksalt Journal | Brighton Food, Music & Events",
+    "description": "The Rocksalt Journal: news from the kitchen, the coffee bar and the Sunday sessions on Bay Street, Brighton.",
+    "scenes": ["footer"]
+  },
+  {
+    "path": "/404", "file": "404", "nav": "", "noindex": true,
+    "title": "Page not found | Rocksalt",
+    "description": "That page could not be found.",
+    "scenes": ["footer"]
+  }
+]

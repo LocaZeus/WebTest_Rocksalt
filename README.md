@@ -1,30 +1,62 @@
 # Rocksalt Cafe & Restaurant website
 
-One-page website for Rocksalt, 360-364 Bay Street, Brighton VIC 3186.
+Multi-page website for Rocksalt, 360-364 Bay Street, Brighton VIC 3186.
 
 It is built on the free [Hopla template by 8B](https://8b.com/templates/hopla/) (MIT licence, see `TEMPLATE-LICENSE`), restyled with Rocksalt's fonts (Fraunces and Raleway), colours and photos.
 
-## Structure
+## Pages
 
-- `public/index.html`: the whole page (HTML, CSS and scripts in one file)
-- `public/media/`: Rocksalt photos and logo
-- `public/vendor/`: GSAP 3.13.0 and Lenis 1.3.27, hosted locally
-- `wrangler.jsonc`: Cloudflare Workers config (serves `public/` as static assets)
+| URL | Source |
+|---|---|
+| `/` | `src/pages/home.html` |
+| `/menus/` | `src/pages/menus.html` (menu items come from `src/data/menu.json`) |
+| `/live-music/` | `src/pages/live-music.html` |
+| `/private-dining-functions/` | `src/pages/functions.html` |
+| `/about/` | `src/pages/about.html` |
+| `/events/` | `src/pages/events.html` |
+| `/contact/` | `src/pages/contact.html` |
+| `/gallery/` | `src/pages/gallery.html` (photos come from `src/data/gallery.json`) |
+| `/blog/` | `src/pages/blog.html` (no entries yet, hidden from search engines) |
+| 404 | `src/pages/404.html` |
 
-## Preview locally
+## How it is put together
 
-```bash
-cd public && python3 -m http.server 8765
-```
+The site is plain HTML, CSS and JavaScript, but the pages share a lot (header, footer, styles), so they are generated from the `src/` folder into `public/` by a small script.
 
-Then open http://localhost:8765.
+- `src/pages/`: the content of each page
+- `src/sections/`: reusable blocks used on more than one page
+- `src/partials/`: head, header and footer shared by every page
+- `src/data/`: `site.json` (address, phone, links, navigation), `menu.json`, `gallery.json`, `pages.json` (titles and descriptions)
+- `src/css/`, `src/js/`: styles and scripts
+- `public/`: **generated output**, plus photos (`public/media/`) and animation libraries (`public/vendor/`)
+- `wrangler.jsonc`: Cloudflare config (serves `public/`)
+
+## Changing the site
+
+1. Edit files in `src/` (never edit the generated `.html` files in `public/`, they get overwritten).
+2. Rebuild:
+
+   ```bash
+   python3 scripts/build.py
+   ```
+
+3. Preview:
+
+   ```bash
+   cd public && python3 -m http.server 8765
+   ```
+
+   Then open http://localhost:8765.
+4. Commit **both** `src/` and `public/`, then push. Cloudflare publishes whatever is in `public/`.
 
 ## Deploy
 
-Cloudflare Workers Builds is connected to this repository (Worker `webtest-rocksalt`). Each push to the production branch runs `npx wrangler deploy`.
+Cloudflare Workers Builds is connected to this repository (Worker `webtest-rocksalt`). Each push to the production branch runs `npx wrangler deploy`, which uploads `public/`.
 
 ## Before launch
 
-- The contact form does not send anything yet. It needs a backend (for example a Cloudflare Worker with email, or Formspree).
-- Check prices, opening hours and the musician list against the current menus.
+- The contact and function enquiry forms check the fields but do not send anything yet. They need a backend (for example a Cloudflare Worker that sends email, or a form service).
+- Check prices, opening hours, the musician list and the menu against the current menus and PDFs. Tequila Sunrise has no price in the source PDF.
+- Decide whether to keep the Journal page. It has no entries and is hidden from search engines until it does.
+- Set the final domain, then add absolute URLs for social sharing images, a sitemap and `robots.txt`.
 - Photo credits: all photos are Rocksalt's own, taken from the staging site.
